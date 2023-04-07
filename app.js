@@ -10,7 +10,7 @@ const IMAGENET_CLASSES = {
     .getElementById("predict-button")
     .addEventListener("click", clickProdict);
   (async function () {
-    model = await tf.loadGraphModel("jsmodel.json");
+    model = await tf.loadGraphModel("model.tflite");
     $(".progress-bar").hide();
   })();
   
